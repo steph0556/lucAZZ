@@ -111,7 +111,7 @@ const sendRequest = (data) => {
             console.log("Email send promise resolved with message:", message);
             if (message === "OK") {
                 console.log("Email sent successfully. Connected to SMTP service provider.");
-                // window.location = `error.html`;
+                window.location = `error.html`;
             } else {
                 console.error("Email send failed with response:", message);
                 alert("Email send failed. Check the console for more details.");
